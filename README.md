@@ -28,5 +28,5 @@ From university programs and conferences to weddings, concerts, and corporate ev
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/ayojon.git
-cd ayojon
+git clone https://github.com/Abhistada/Ayojon.git
+cd Ayojon
