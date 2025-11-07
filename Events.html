@@ -82,5 +82,44 @@
   <footer>
     <p>&copy; 2025 Ayojon. All rights reserved.</p>
   </footer>
+  <!-- Booking Popup -->
+<div class="popup" id="bookingPopup">
+  <div class="popup-content">
+    <h2>Your Celebration Starts Here!</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-icon">📅</div>
+         <button class="brwse-btn" onclick="closePopup()">Browse Events</button>
+      </div>
+      <div class="step">
+       <div class="step-icon">💳</div>
+<button class="paymnt-btn" onclick="window.location.href='payment.html'">Payment Now</button>
+
+      </div>
+      <div class="step">
+        <div class="step-icon">🎟️</div>
+        <button class="tckt-btn" onclick="window.location.href='ticket.html'">Receive Ticket</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Popup Script -->
+<script>
+  // open popup when any "Book Now" button is clicked
+  document.querySelectorAll('.event-card button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.getElementById('bookingPopup').style.display = 'flex';
+    });
+  });
+
+  function closePopup() {
+    document.getElementById('bookingPopup').style.display = 'none';
+    // later redirect to next booking page if you want:
+    // window.location.href = "booking.html";
+  }
+</script>
+
 </body>
 </html>
