@@ -118,7 +118,7 @@
     <h2>Ayojon</h2>
     <a href="#">Create Event</a>
     <a href="#">Manage Events</a>
-    <a href="#">Logout</a>
+  
   </div>
 
   <div class="main">
@@ -143,8 +143,8 @@
   <input type="time" name="time" required>
   <input type="text" name="location" placeholder="Location">
   <input type="number" name="price" placeholder="Ticket Price" step="0.01">
-  <label>Registration Deadline</label>
   <input type="date" name="registration_deadline" required>
+  <label>Registration Deadline</label>
 
   <input type="url" name="event_link" placeholder="Event Link (Facebook/LinkedIn)" required>
   <input type="file" name="image">
@@ -152,37 +152,6 @@
 </form>
 
     </div>
-
-    <div class="event-table">
-      <h2>All Events</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Date</th>
-            <th>Time</th>
-            <th>Location</th>
-            <th>Price</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- later JS or PHP will load these -->
-          <tr>
-            <td>Sample Event</td>
-            <td>2025-11-20</td>
-            <td>18:00</td>
-            <td>Dhaka</td>
-            <td>500</td>
-            <td class="actions">
-              <button>Edit</button>
-              <button class="delete">Delete</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
   </div>
 </body>
 </html>
-
